@@ -13,7 +13,7 @@ The challenge focuses on weakly supervised semantic segmentation, where the goal
 
 ## Approach
 ### 1. Data Preprocessing
-- TODO
+- What are we exactly supposed to do here ? 
 
 ### 2. Model Architecture
 - TODO
