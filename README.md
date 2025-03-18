@@ -11,6 +11,31 @@ This repository contains our submission for the [Weakly Supervised Semantic Segm
 ## Project Overview
 The challenge focuses on weakly supervised semantic segmentation, where the goal is to segment objects in images using limited annotations. We developed a deep learning-based approach leveraging convolutional neural networks (CNNs) and attention mechanisms to improve segmentation quality while maintaining efficiency.
 
+# Data Download Instructions
+
+To download and extract the dataset, run the following commands in a terminal:
+
+```bash
+mkdir -p Data
+cd Data
+wget https://challengedata.ens.fr/media/public/train-images.zip
+wget https://challengedata.ens.fr/media/public/test-images.zip
+wget https://challengedata.ens.fr/media/public/label_Hnl61pT.csv -O y_train.csv
+
+unzip -q train-images.zip
+unzip -q test-images.zip
+```
+
+These commands will:
+- Create a `Data` directory if it does not already exist.
+- Download the dataset files into the `Data` directory.
+- Extract the `train-images.zip` and `test-images.zip` archives.
+
+Ensure you have `wget` and `unzip` installed on your system. If not, install them using:
+- **Ubuntu/Linux**: `sudo apt install wget unzip`
+- **MacOS (Homebrew)**: `brew install wget unzip`
+
+
 ## Approach
 ### 1. Data Preprocessing
 - What are we exactly supposed to do here ? 
